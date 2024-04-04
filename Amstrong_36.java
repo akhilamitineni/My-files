@@ -3,6 +3,7 @@ import java.lang.Math;
 
 public class Amstrong_36 {
     public static void main(String[] args) {
+        // this is armstrong number
         int i, n;
         int arr[] = new int[500];
         double sum = 0;
