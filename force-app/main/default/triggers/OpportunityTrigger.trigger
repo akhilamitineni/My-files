@@ -16,7 +16,7 @@ trigger OpportunityTrigger on Opportunity (After insert,After update) {
                       newcase1.Case_name__c=opp1.name;
                       newcase1.Status= 'NEW';
                       newcase1.Origin='Email';
-                      newcase1.OwnerId=System.Label.Low_Priority_queue;
+                      
             
                       RecordType  RecordTypeName1= [select  id ,sObjecttype from RecordType  where SobjectType='Case' AND  DeveloperName = 'caseA4' ]; 
                       newcase1.RecordTypeid=RecordTypeName1.id;
